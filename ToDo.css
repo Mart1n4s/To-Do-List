@@ -1,0 +1,90 @@
+:root{
+    --div-margin-left: 10px;
+    --div-margin-right: 10px;
+}
+
+body{
+    margin-top: 40px;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.main{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+}
+
+#enter-item{
+    width: 200px;
+    margin-right: 10px;
+}
+
+#enter-date{
+    cursor: pointer;
+    text-align: center;
+}
+
+#add-button{
+    background-color: rgb(255, 213, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    border-radius: 15%;
+}
+
+.class-line{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(0, 201, 0);
+}
+
+.class-check_box{
+    width: 20px;
+    height: 20px;
+    margin-left: var(--div-margin-left);
+    margin-right: var(--div-margin-right);
+    cursor: pointer;
+}
+
+.class-description{
+    margin-left: var(--div-margin-left);
+    margin-right: var(--div-margin-right);
+}
+
+.class-deadline{
+    margin-left: var(--div-margin-left);
+    margin-right: var(--div-margin-right);
+}
+
+.class-delete_button{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    margin-left: var(--div-margin-left);
+    margin-right: var(--div-margin-right);
+}
+
+.class-check_box:checked + .class-description{
+    text-decoration: line-through;
+}
