@@ -46,7 +46,6 @@ const Display = () => {
         const check_box = document.createElement('input')
         check_box.type = 'checkbox'
         check_box.className = 'class-check_box'
-        check_box.innerText = 'Check'
         check_box.onchange = CheckTask(task, check_box)
         check_box.checked = task.completed 
         line.appendChild(check_box)
@@ -161,7 +160,6 @@ const Sort = () => {
             break
         default:
             Display()
-            break
     }
 }
 
